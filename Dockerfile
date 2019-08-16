@@ -4,6 +4,8 @@ FROM java:8
 RUN apt-get update
 RUN apt-get install -y maven
 
+WORKDIR /code
+
 # Add common depencencies
 ADD pom.xml /code/pom.xml
 RUN ["mvn", "dependency:resolve"]
