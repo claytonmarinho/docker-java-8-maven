@@ -1,4 +1,4 @@
-FROM openjdk:14-ea-8-jdk-alpine3.10
+FROM openjdk:8-jre
 
 # Install maven
 RUN apt-get update
